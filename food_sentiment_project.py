@@ -12,7 +12,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-st.sidebar.image("f:/images/flag.jpg")
+st.sidebar.image("flag.jpg")
 st.sidebar.header("📞Contact us")
 st.sidebar.text("99999999")
 
@@ -40,3 +40,4 @@ if st.button("Predict",key='b2'):
     df['Sentiment']=model.predict(df.Msg)
     df['Sentiment']=df['Sentiment'].map({0:"👎 Dislike",1:"👍 Like"})
     st.dataframe(df,width=700)
+
